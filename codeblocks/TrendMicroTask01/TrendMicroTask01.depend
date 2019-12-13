@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1576240122 source:d:\git\codilitylessons\codeblocks\trendmicrotask01\trendmicrotask01.cpp
+	<iostream>
+	<vector>
+
