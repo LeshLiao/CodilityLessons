@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1576228436 source:d:\git\codilitylessons\codeblocks\task3\main.cpp
+	<iostream>
+	<vector>
+
+1576232797 source:d:\git\codilitylessons\codeblocks\task3\task3.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<string>
+

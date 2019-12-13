@@ -16,6 +16,11 @@ int main()
 //    {
 //        cout << testInput[i] << ",";
 //    }
+
+    for(int n : testInput) {
+        cout << n << '\n';
+    }
+
     cout << "Return:" << solution(testInput) << endl;
     return 0;
 }
@@ -32,8 +37,7 @@ int solution(vector<int> &A)
     else
     {
         vector<bool> elementFlag(maxValue);
-        //cout << "maxValue:" << maxValue << endl;
-        for (vector<int>::size_type i = 0; i < A.size(); ++i)
+        for (std::size_t i = 0; i != A.size(); ++i)
         {
             int index = A[i]-1;
             if(index >= 0 && index < maxValue)
@@ -49,7 +53,7 @@ int solution(vector<int> &A)
 int findMaxinum(vector<int> &A)
 {
     int maxValue = 0;
-    for (vector<int>::size_type i = 0; i < A.size(); ++i)
+    for (std::size_t i = 0; i != A.size(); ++i)
     {
         if(A[i] > maxValue) maxValue = A[i];
     }
@@ -59,8 +63,8 @@ int findMaxinum(vector<int> &A)
 int findSmallest(vector<bool> &elementFlag)
 {
     int smallestInt = 1;
-    vector<bool>::size_type i;
-    for (i = 0; i < elementFlag.size(); ++i)
+    std::size_t i;
+    for (i = 0; i != elementFlag.size(); ++i)
     {
         if(elementFlag[i] == false)
         {
